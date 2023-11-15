@@ -1,0 +1,35 @@
+<div class="sign_up_main_block">
+<div class="form__group field">
+  <input class="form__field" [(ngModel)]="user.username" placeholder="Name" id="username">
+  <label class="form__label">Name</label>
+</div>
+<div class="form__group field">
+  <input class="form__field" [(ngModel)]="user.password" placeholder="Password" type="password">
+  <label class="form__label">Password</label>
+</div>
+<div class="form__group field">
+  <input class="form__field" [(ngModel)]="user.email" id="email" type="text" />
+  <label class="form__label" for="email">Email</label>
+</div>
+
+<div class="form__group field">
+  <input class="form__field" [(ngModel)]="user.firstname" id="firstname" type="text" maxlength="255"/>
+  <label class="form__label" for="firstname">Firstname</label>
+</div>
+
+<div class="form__group field">
+  <input class="form__field" [(ngModel)]="user.surname" id="lastname" type="text" maxlength="255"/>
+  <label class="form__label" for="lastname">Lastname</label>
+</div>
+
+<div class="form__group field">
+  <input class="form__field" [(ngModel)]="user.phoneNumber" id="phone_number" placeholder="+7 (xxx) xxx-xx-xx" type="text" prefix="+7" mask="(000) 000-00-00"/>
+  <label class="form__label" for="phone_number">Phone number</label>
+</div>
+
+<div class="form__group field">
+  <input class="form__field" [(ngModel)]="user.url" id="url" type="text" maxlength="255"/>
+  <label class="form__label" for="url">URL</label>
+</div>
+<button class="button-6" (click)="register(user)">Sign up</button>
+</div>

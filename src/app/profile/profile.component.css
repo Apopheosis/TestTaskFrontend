@@ -1,0 +1,15 @@
+
+
+div.profile_main_block {
+  margin-left: 40%;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  width: 500px;
+}
+
+div.button {
+  margin-top: 2%;
+  margin-right: 50%;
+}
+

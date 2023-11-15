@@ -1,0 +1,20 @@
+<body>
+<app-header></app-header>
+<jw-modal id="modal-1">
+  <a (click)="modalService.close()"><div class="jw-modal-cross">[X]</div></a>
+  <h3>Not all fields are filled!</h3>
+  <p>Please fill all fields.</p>
+</jw-modal>
+<jw-modal id="modal-2">
+  <a (click)="modalService.close()"><div class="jw-modal-cross">[X]</div></a>
+  <h3>Name fields' length must be greater than 1.</h3>
+  <p>Please change names.</p>
+</jw-modal>
+<jw-modal id="modal-3">
+  <a (click)="modalService.close()"><div class="jw-modal-cross">[X]</div></a>
+  <h3>Incorrect username and/or password.</h3>
+  <p>Please enter right username and password</p>
+</jw-modal>
+<router-outlet></router-outlet>
+</body>
+

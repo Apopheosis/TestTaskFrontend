@@ -1,0 +1,35 @@
+
+<div class="profile_main_block">
+  <div class="form__group field">
+    <input class="form__field" id="email" type="text" readonly [(ngModel)]="user.email"/>
+    <label class="form__label" for="email">Email</label>
+
+  </div>
+
+  <div class="form__group field">
+    <input class="form__field" id="firstname" type="text" maxlength="255" [(ngModel)]="user.firstname"/>
+    <label class="form__label" for="firstname">Firstname</label>
+
+  </div>
+
+  <div class="form__group field">
+    <input class="form__field" id="lastname" type="text" maxlength="255" [(ngModel)]="user.surname"/>
+    <label class="form__label" for="lastname">Lastname</label>
+
+  </div>
+
+  <div class="form__group field">
+
+    <input class="form__field" id="phone_number" placeholder="+7 (xxx) xxx-xx-xx" type="text" prefix="+7" mask="(000) 000-00-00" [(ngModel)]="user.phoneNumber"/>
+    <label class="form__label" for="phone_number">Phone number</label>
+  </div>
+
+  <div class="form__group field">
+
+    <input class="form__field" id="url" type="text" maxlength="255" [(ngModel)]="user.url"/>
+    <label class="form__label" for="url">URL</label>
+  </div>
+
+  <div class="button"><button (click)="refreshProfile(user)">Refresh profile</button></div>
+
+</div>

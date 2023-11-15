@@ -1,0 +1,30 @@
+div.routes_main_block {
+  width: 800px;
+  height: 50%;
+  border: 3px solid;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: auto;
+  height: 50px;
+}
+
+div.route_block {
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  padding: 30px;
+  text-align: center;
+}
+
+div.route_block:hover {
+  background-color: #8676b6;
+  transition: 0.2s;
+}
+
+a {
+  color: black;
+}

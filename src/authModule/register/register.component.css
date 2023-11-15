@@ -1,0 +1,11 @@
+div.sign_up_main_block {
+  margin-left: 40%;
+  display: inline-block;
+  justify-content: center;
+  width: 500px;
+  height: 800px;
+}
+
+button {
+  margin: 20%;
+}

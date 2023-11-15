@@ -1,0 +1,17 @@
+
+<div class="login_main_block">
+
+<div class="form__group field">
+  <input [(ngModel)]="user.username" placeholder="Name" id="name" class="form__field">
+  <label for="name" class="form__label" >Name</label>
+</div>
+<div class="form__group field">
+  <input class="form__field" [(ngModel)]="user.password" placeholder="Password" type="password" id="password">
+  <label class="form__label" for="password">Password</label>
+</div>
+  <div class="buttons">
+    <button class="button-6" (click)="navigateToSignUp()">Sign up</button>
+    <button class="button-6" (click)="login(user)">Login</button>
+  </div>
+</div>
+
